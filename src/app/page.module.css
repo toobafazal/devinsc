@@ -201,7 +201,12 @@
     z-index: 1;
   }
 }
-
+.z-index{
+  z-index: 1;
+}
+.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+            border-radius:"none !important"
+        }
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
