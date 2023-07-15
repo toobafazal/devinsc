@@ -29,7 +29,7 @@ const Login = () => {
             {isClient ?
                 <>
                 <Animation />
-                <Box sx={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", color: "#fff" }}>
+                <Box sx={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", color: "#fff",display:'flex', flexDirection:'column' }}>
 
                     <Box display="flex" alignItems="center" justifyContent="center">
                         <Image src="/img/logo.webp" width={50} height={50} />
@@ -102,18 +102,20 @@ const Login = () => {
                 </Box>
                 <Box
                         sx={{
-                            position:'fixed',
+                            position:'absolute',
                             bottom: '20px',
                             right: '20px',
-                            display: 'flex',
-                            alignItems: 'flex-end',
+                            display:'flex',
+                            
                             '@media (max-width: 767px)': {
-                                alignItems: 'center',
+                               bottom:"100px",
+                               right:"120px"
                             },
                         }}
                     >
                         <Link href="#">
-                            <p style={{ color: '#fff', textDecoration: 'underline', fontSize: '10px' }}>Term of use</p>
+                            <p style={{ color: '#fff', textDecoration: 'underline', fontSize: '10px',
+                            }}>Term of use</p>
                         </Link>
                         <Link href="#">
                             <p style={{ color: '#fff', textDecoration: 'underline' ,fontSize: '10px',marginLeft:"12px"}}>Privacy policy</p>
